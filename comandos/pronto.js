@@ -4,9 +4,7 @@ exports.run = (client, message, args) => {
     message.channel.overwritePermissions(da, {
         SEND_MESSAGES: false,
     })
-    var o = setInterval(() =>{
-        da.delete()
-        clearInterval(o)
+
     message.channel.send(`As instruções foram enviadas em seu privado.`)
     message.author.send({embed: {
         "title": `👑 Aplicação LothusMC`,
@@ -44,7 +42,6 @@ exports.run = (client, message, args) => {
     setTimeout(() => {
         help.react('☑');
     }, 400);
-    message.channel.delete();
     const collector = help.createReactionCollector((r, u) => (r.emoji.name === '☑') && u.id !== client.user.id);
 
     collector.on('collect', r => {
@@ -345,5 +342,4 @@ exports.run = (client, message, args) => {
 }
     })
 })
-    })
 }
