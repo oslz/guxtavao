@@ -182,7 +182,7 @@ exports.run = (client, message, args) => {
        collector2.on('collect', hac11 => {
        hack12 = hac11.content;
 
-
+           message.author.send(`O formulário foi finalizado! Aguarde proximas instruções da equipe.`)
 
 
        client.channels.get('452987618297380875').send({
