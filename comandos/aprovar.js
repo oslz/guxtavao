@@ -29,12 +29,12 @@ exports.run = (client, message, args) => {
                 "icon_url": ""
             },
             "fields": [{
-                "name": `${member.displayName} temos a incrivel noticia que você foi aprovado!`,
-                "value": `Você será setado como ajudante!`,
+                "name": `${member.displayName} temos a incrivel noticia de que você foi aprovado!`,
+                "value": `Aguarde instruções do Staff Manager, o mesmo entrará em contato com você novamente.`,
                 },
                 {
-                    "name": "Bem-vindo a nossa equipe! Qualquer problema, pode me chamar.",
-                    "value": `Atenciosamente, ${message.author.username}`,
+                    "name": "Bem-vindo a nossa equipe!",
+                    "value": `Atenciosamente, Equipe do Lothus`,
                 }
             ]
     }
