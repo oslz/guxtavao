@@ -29,11 +29,11 @@ exports.run = (client, message, args) => {
                 "icon_url": ""
             },
             "fields": [{
-                "name": `${member.displayName} Infelizmente não foi dessa vez...`,
-                "value": `Você foi reprovado, porém não desista!`,
+                "name": `${member.displayName} Você não foi aprovado, mas tudo bem, acontece...`,
+                "value": `Boa sorte no futuro!`,
                 },
                 {
-                    "name": "Caso queira tentar novamente você poderá se aplicar em um prazo de esqueci",
+                    "name": "Caso queira tentar novamente você poderá se aplicar em um prazo de 15 dias.",
                     "value": `Equipe do Lothus.`,
                 }
             ]
