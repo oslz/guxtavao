@@ -1,12 +1,5 @@
 
 exports.run = (client, message, args) => {
-    var da = message.guild.roles.find("name",`Aplicação - ${message.author.username}`)
-    message.channel.overwritePermissions(da, {
-        SEND_MESSAGES: false,
-    })
-    var o = setInterval(() =>{
-        da.delete()
-        clearInterval(o)
     message.channel.send(`As instruções foram enviadas em seu privado.`)
     message.author.send({embed: {
         "title": `👑 Aplicação LothusMC`,
@@ -184,7 +177,7 @@ exports.run = (client, message, args) => {
        collector2.on('collect', hac11 => {
        hack12 = hac11.content;
 
-       message.channel.send('O formulário foi **finalizado**! Aguarde proximas instruções em seu chat de aplicação. Qualquer problema ou dúvida envie lá. **Não peça respostas**')
+       message.author.send('O formulário foi **finalizado**! Aguarde proximas instruções em seu chat de aplicação. Qualquer problema ou dúvida envie lá. **Não peça respostas**')
        message.channel.send({
         "embed": {
         "title": `👑Aplicação - ${nomea}`,
@@ -342,5 +335,4 @@ exports.run = (client, message, args) => {
 }
     })
 })
-    })
-}
+    }
