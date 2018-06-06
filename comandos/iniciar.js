@@ -40,7 +40,7 @@ exports.run = (client, message, args) => {
     message.guild.createRole({"name":`Aplicação - ${member.displayName}`}).then(a =>{
         message.guild.members.get(member.id).addRole(a)
         message.guild.createChannel(`Aplicação - ${member.displayName}`,'text').then(b =>{
-            b.setParent('452980671518867457')
+            b.setParent('453709301261795328')
         var da = message.guild.roles.find("name","@everyone")
 
         message.channel.overwritePermissions(a, {

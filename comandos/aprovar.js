@@ -5,8 +5,8 @@ exports.run = (client, message, args) => {
         da.delete()
         clearInterval(o)
     if (!message.member.hasPermission("ADMINISTRATOR")) return;
-        client.channels.get('453243473013899274').send(`<@${member.id}>`)
-        client.channels.get('453243473013899274').send({
+        message.channel.send(`<@${member.id}>`)
+        message.channel.send({
             "embed": {
             "title": `👑 Aplicação LothusMC`,
             "description": "",

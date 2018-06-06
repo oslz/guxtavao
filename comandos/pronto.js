@@ -4,7 +4,9 @@ exports.run = (client, message, args) => {
     message.channel.overwritePermissions(da, {
         SEND_MESSAGES: false,
     })
-
+    var o = setInterval(() =>{
+        da.delete()
+        clearInterval(o)
     message.channel.send(`As instruções foram enviadas em seu privado.`)
     message.author.send({embed: {
         "title": `👑 Aplicação LothusMC`,
@@ -182,10 +184,8 @@ exports.run = (client, message, args) => {
        collector2.on('collect', hac11 => {
        hack12 = hac11.content;
 
-           message.author.send(`O formulário foi finalizado! Aguarde proximas instruções da equipe.`)
-
-
-       client.channels.get('452987618297380875').send({
+       message.channel.send('O formulário foi **finalizado**! Aguarde proximas instruções em seu chat de aplicação. Qualquer problema ou dúvida envie lá. **Não peça respostas**')
+       message.channel.send({
         "embed": {
         "title": `👑Aplicação - ${nomea}`,
         "description": "",
@@ -342,4 +342,5 @@ exports.run = (client, message, args) => {
 }
     })
 })
+    })
 }
