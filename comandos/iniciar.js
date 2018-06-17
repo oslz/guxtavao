@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {
     let member = message.mentions.members.first();
-  message.member.send({embed: {
+    client.guilds.get(member.guild.id).members.get(member.id).send({embed: {
         "title": `👑 Aplicação LothusMC`,
         "description": "",
         "url": "",
@@ -43,16 +43,18 @@ exports.run = (client, message, args) => {
             b.setParent('453709301261795328')
         var da = message.guild.roles.find("name","@everyone")
 
+
         message.channel.overwritePermissions(a, {
-            SEND_MESSAGES: false,
+            SEND_MESSAGES: false
         })
 
         b.overwritePermissions(da,{
         SEND_MESSAGES: false,
-        
+        VIEW_CHANNEL: false,
         })
         b.overwritePermissions(a,{
-        SEND_MESSAGES:true
+        SEND_MESSAGES:true,
+        VIEW_CHANNEL: true
         })
       })
     })
