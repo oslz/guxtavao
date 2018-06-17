@@ -1,8 +1,5 @@
 exports.run = (client, message, args) => {
     let member = message.mentions.members.first();
-    var da = message.guild.roles.find("name",`Aplicação - ${member.displayName}`)
-    var o = setInterval(() =>{
-        da.delete()
         clearInterval(o)
     if (!message.member.hasPermission("ADMINISTRATOR")) return;
         message.channel.send(`<@${member.id}>`)
@@ -39,5 +36,4 @@ exports.run = (client, message, args) => {
             ]
     }
     })
-})
 }

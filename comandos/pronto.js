@@ -117,47 +117,47 @@ exports.run = (client, message, args) => {
        situacao9 = situaca9.content;
        
        /// HACKS
-       message.author.send("O hack NoClip existe? Se sim explique sua função.")
+       message.author.send("O hack GhostAura existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hack => {
        hack1 = hack.content;
 
-       message.author.send("O hack VClip existe? Se sim explique sua função.")
+       message.author.send("O hack RodAura existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac1 => {
        hack2 = hac1.content;
 
-       message.author.send("O hack Step existe? Se sim explique sua função.")
+       message.author.send("O hack Flight existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac2 => {
        hack3 = hac2.content;
 
-       message.author.send("O hack Fightbot existe? Se sim explique sua função.")
+       message.author.send("O hack BunnyHop existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac3 => {
        hack4 = hac3.content;
 
-       message.author.send("O hack SafeWalk existe? Se sim explique sua função.")
+       message.author.send("O hack Dolphin existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac4 => {
        hack5 = hac4.content;
 
-       message.author.send("O hack InvBot existe? Se sim explique sua função.")
+       message.author.send("O hack Step existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac5 => {
        hack6 = hac5.content;
 
-       message.author.send("O hack AirJump existe? Se sim explique sua função.")
+       message.author.send("O hack AutoPvP existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac6 => {
        hack7 = hac6.content;
 
-       message.author.send("O hack AntiWeb existe? Se sim explique sua função.")
+       message.author.send("O hack FastHeal existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac7 => {
        hack8 = hac7.content;
 
-       message.author.send("O hack BedBreaker existe? Se sim explique sua função.")
+       message.author.send(`O hack AntiWeb existe? Se sim, descreva a sua funcionalidade.`)
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac8 => {
        hack9 = hac8.content;
@@ -167,12 +167,12 @@ exports.run = (client, message, args) => {
        collector2.on('collect', hac9 => {
        hack10 = hac9.content;
 
-       message.author.send("O hack ClickTeleport existe? Se sim explique sua função.")
+       message.author.send("O hack InvBot existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac10 => {
        hack11 = hac10.content;
 
-       message.author.send("O hack RodAimbot existe? Se sim explique sua função.")
+       message.author.send("O hack ClickPass existe? Se sim, descreva a sua funcionalidade.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', hac11 => {
        hack12 = hac11.content;
@@ -253,51 +253,51 @@ exports.run = (client, message, args) => {
             "value": `R: ${situacao9}`,
         },
         {
-            "name": "O hack Noclip existe? Se sim explique sua função.",
+            "name": "O hack GhostAura existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack1}`,
         },
         {
-            "name": "O hack Vclip existe? Se sim explique sua função.",
+            "name": "O hack RodAura existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack2}`,
         },
         {
-            "name": "O hack Step existe? Se sim explique sua função.",
+            "name": "O hack Flight existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack3}`,
         },
         {
-            "name": "O hack Fightbot existe? Se sim explique sua função.",
+            "name": "O hack BunnyHop existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack4}`,
         },
         {
-            "name": "O hack SafeWalk existe? Se sim explique sua função.",
+            "name": "O hack Dolphin existe? Se sim, descreva a sua funcionalidade. ",
             "value": `R: ${hack5}`,
         },
         {
-            "name": "O hack InvBot existe? Se sim explique sua função.",
+            "name": "O hack Step existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack6}`,
         },
         {
-            "name": "O hack AirJump existe? Se sim explique sua função.",
+            "name": "O hack AutoPvP existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack7}`,
         },
         {
-            "name": "O hack AntiWeb existe? Se sim explique sua função.",
+            "name": "O hack FastHeal existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack8}`,
         },
         {
-            "name": "O hack BedBreaker existe? Se sim explique sua função.",
+            "name": "O hack AntiWeb existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack9}`,
         },
         {
-            "name": "O hack AutoRod existe? Se sim explique sua função.",
+            "name": "O hack AutoRod existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack10}`,
         },
         {
-            "name": "O hack ClickTeleport existe? Se sim explique sua função.",
+            "name": "O hack InvBot existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack11}`,
         },
         {
-            "name": "O hack RodAimbot existe? Se sim explique sua função.",
+            "name": "O hack ClickPass existe? Se sim, descreva a sua funcionalidade.",
             "value": `R: ${hack12}`,
 
 
