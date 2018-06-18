@@ -65,53 +65,53 @@ exports.run = (client, message, args) => {
        collector2.on('collect', pessoa2 => {
        pessoal3 = pessoa2.content;
 
-       message.author.send("Para você o que significa responsabilidade e maturidade?")
+       message.author.send("Diferencie amizade e relação de trabalho.")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', pessoa3 => {
        pessoal4 = pessoa3.content;
 
        /// SITUACOES
-       message.author.send("Seu melhor amigo faz parte da equipe e está abusando de algum bug que não foi repassado para superiores, o que você faria?")
+       message.author.send("Imagine um player que comece a falar mal do seu trabalho e excessivamente de você, mas não expõe ofensa, nesta ocasião qual seria sua atitude?")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', situaca1 => {
        situacao1 = situaca1.content;
 
-       message.author.send("Imagine que você está jogando seu minigame favorito e acaba recebendo um report, mas você está muito bem na partida, qual seria sua reação? ")
+       message.author.send("Imagine você vendo uma vítima que supostamente esteja usando programas ilegais, logo em seguida, você aplica o banimento e quando vai checar a sua gravação, percebe que, na verdade, a vítima era inocente e não utilizava nenhum programa ilegal. Nesta ocasião, o que você faria?")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', situaca2 => {
        situacao2 = situaca2.content;
 
-       message.author.send("Seu amigo está no servidor e começa a floodar o chat no lobby do servidor, o que você faria?")
+       message.author.send("Imagine que você esteja gravando uma partida e que você esteja MUITO bem de itens, porém logo em seguida você recebe um report, nesta ocasião, o que você faria?")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', situaca3 => {
        situacao3 = situaca3.content;
 
-       message.author.send("Você é um Staff e tem total poder dentro do servidor, então aparece um player e começa a xingar você, qual seria sua atitude?")
+       message.author.send("Você é paciente? Dê uma nota de 0 a 10 para a sua paciência e justifique-a")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', situaca4 => {
        situacao4 = situaca4.content;
 
-       message.author.send("Um grupo de jogadores está discutindo com outro jogador, qual atitude você tomaria?")
+       message.author.send("Suponha-se que você está a horas vendo um suspeito de hacker no servidor e, depois de muito tempo consegue provas suficientes para banir, porém chega outro membro da Staff e bane primeiro que você, o que você faria?")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', situaca5 => {
        situacao5 = situaca5.content;
 
-       message.author.send("Suponha-se que você está a horas vendo um suspeito de hacker no servidor e, depois de muito tempo consegue provas suficientes para banir, porém chega outro membro da Staff e bane primeiro que você, o que você faria?")
+       message.author.send("Um superior pede provas de um banimento seu, porém você excluiu sem querer, o que você faria?")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', situaca6 => {
        situacao6 = situaca6.content;
 
-       message.author.send("Você vê seu colega de trabalho abusando, porém ele é um dos seus melhores amigos, o que você faria?")
+       message.author.send("Um grupo de jogadores está discutindo com outro jogador, qual atitude você tomaria?")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', situaca7 => {
        situacao7 = situaca7.content;
 
-       message.author.send("Um player está ofendendo o servidor, qual seria sua reação?")
+       message.author.send("Você vê seu colega de trabalho abusando, porém ele é um dos seus melhores amigos, o que você faria?")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', situaca8 => {
        situacao8 = situaca8.content;
 
-       message.author.send("Um superior pede provas de um banimento seu, porém você excluiu sem querer, o que você faria?")
+       message.author.send("Um player está ofendendo o servidor, qual seria sua reação?")
        var collector2 =  message.author.dmChannel.createMessageCollector(v => v.author.id == message.author.id,{time: 1000 * 1000,max: 1})
        collector2.on('collect', situaca9 => {
        situacao9 = situaca9.content;
@@ -213,97 +213,121 @@ exports.run = (client, message, args) => {
             "value": `R: ${pessoal3}`,
         },
         {
-            "name": "Para você o que significa responsabilidade e maturidade?",
+            "name": "Diferencie amizade e relação de trabalho.",
             "value": `R: ${pessoal4}`,
         },
         {
-            "name": "Seu melhor amigo faz parte da equipe e está abusando de algum bug que não foi repassado para superiores, o que você faria?",
+            "name": "Um player que comece a falar mal do seu trabalho e excessivamente de você, mas não expõe ofensa, nesta ocasião qual seria sua atitude?",
             "value": `R: ${situacao1}`,
         },
         {
-            "name": "Imagine que você está jogando seu minigame favorito e acaba recebendo um report, mas você está muito bem na partida, qual seria sua reação?",
+            "name": "Imagine que você está vendo uma vítima e pune ela por programas ilegais, porém ao observar a gravação observa que ela estava 'legit', qual seria sua reação? ",
             "value": `R: ${situacao2}`,
         },
         {
-            "name": "Seu amigo está no servidor e começa a floodar o chat no lobby do servidor, o que você faria?",
+            "name": "Imagine que você esteja gravando uma partida e que você esteja MUITO bem de itens, porém logo em seguida você recebe um report, nesta ocasião, o que você faria?",
             "value": `R: ${situacao3}`,
         },
         {
-            "name": "Você é um Staff e tem total poder dentro do servidor, então aparece um player e começa a xingar você, qual seria sua atitude?",
+            "name": "Você é paciente? Dê uma nota de 0 a 10 para a sua paciência e justifique-a",
             "value": `R: ${situacao4}`,
         },
         {
-            "name": "Um grupo de jogadores está discutindo com outro jogador, qual atitude você tomaria?",
+            "name": "Suponha-se que você está a horas vendo um suspeito de hacker no servidor, porém chega outro membro da Staff e bane primeiro que você, o que você faria?",
             "value": `R: ${situacao5}`,
         },
         {
-            "name": "Suponha-se que você está a horas vendo um suspeito de hacker no servidor e, depois de muito tempo consegue provas suficientes para banir, porém chega outro membro da Staff e bane primeiro que você, o que você faria?",
+            "name": "Um superior pede provas de um banimento seu, porém você excluiu sem querer, o que você faria?",
             "value": `R: ${situacao6}`,
         },
         {
-            "name": "Você vê seu colega de trabalho abusando, porém ele é um dos seus melhores amigos, o que você faria?",
+            "name": "Um grupo de jogadores está discutindo com outro jogador, qual atitude você tomaria",
             "value": `R: ${situacao7}`,
         },
         {
-            "name": "Um player está ofendendo o servidor, qual seria sua reação?",
+            "name": "Você vê seu colega de trabalho abusando, porém ele é um dos seus melhores amigos, o que você faria?",
             "value": `R: ${situacao8}`,
         },
         {
-            "name": "Um superior pede provas de um banimento seu, porém você excluiu sem querer, o que você faria?",
+            "name": "Um player está ofendendo o servidor, qual seria sua reação?",
             "value": `R: ${situacao9}`,
-        },
-        {
-            "name": "O hack GhostAura existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack1}`,
-        },
-        {
-            "name": "O hack RodAura existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack2}`,
-        },
-        {
-            "name": "O hack Flight existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack3}`,
-        },
-        {
-            "name": "O hack BunnyHop existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack4}`,
-        },
-        {
-            "name": "O hack Dolphin existe? Se sim, descreva a sua funcionalidade. ",
-            "value": `R: ${hack5}`,
-        },
-        {
-            "name": "O hack Step existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack6}`,
-        },
-        {
-            "name": "O hack AutoPvP existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack7}`,
-        },
-        {
-            "name": "O hack FastHeal existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack8}`,
-        },
-        {
-            "name": "O hack AntiWeb existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack9}`,
-        },
-        {
-            "name": "O hack AutoRod existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack10}`,
-        },
-        {
-            "name": "O hack InvBot existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack11}`,
-        },
-        {
-            "name": "O hack ClickPass existe? Se sim, descreva a sua funcionalidade.",
-            "value": `R: ${hack12}`,
-
 
             }
         ]
 }
+})
+message.channel.send({
+    "embed": {
+    "title": ` `,
+    "description": "",
+    "url": "",
+    "color": 1,  
+    "timestamp": new Date(),
+    "footer": {
+        "icon_url": "",
+        "text": ""
+    },
+    "thumbnail": {
+        "url": message.author.displayAvatarURL
+    },
+    "image": {
+        "url": ""
+    },
+    "author": {
+        "name": "",
+        "url": "",
+        "icon_url": ""
+    },
+    "fields": [{
+        "name": "O hack GhostAura existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack1}`,
+    },
+    {
+        "name": "O hack RodAura existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack2}`,
+    },
+    {
+        "name": "O hack Flight existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack3}`,
+    },
+    {
+        "name": "O hack BunnyHop existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack4}`,
+    },
+    {
+        "name": "O hack Dolphin existe? Se sim, descreva a sua funcionalidade. ",
+        "value": `R: ${hack5}`,
+    },
+    {
+        "name": "O hack Step existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack6}`,
+    },
+    {
+        "name": "O hack AutoPvP existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack7}`,
+    },
+    {
+        "name": "O hack FastHeal existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack8}`,
+    },
+    {
+        "name": "O hack AntiWeb existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack9}`,
+    },
+    {
+        "name": "O hack AutoRod existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack10}`,
+    },
+    {
+        "name": "O hack InvBot existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack11}`,
+    },
+    {
+        "name": "O hack ClickPass existe? Se sim, descreva a sua funcionalidade.",
+        "value": `R: ${hack12}`,
+    }]
+}
+
 })
        })
     })
